@@ -1,0 +1,139 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "game clock",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "how",
+            "need help",
+            "help me",
+            "how it works",
+            "what you want",
+            "what i need to do"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": ["stop and exit", "get out from here"]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": ["go", "continue"]
+        },
+        {
+          "name": "Init",
+          "slots": [],
+          "samples": ["new clock", "new game", "clear clock", "restart clock"]
+        },
+        {
+          "name": "ClockLaunch",
+          "slots": [],
+          "samples": [
+            "start game",
+            "go",
+            "fire",
+            "switch on timer",
+            "let's start"
+          ]
+        },
+        {
+          "name": "Prepare",
+          "slots": [
+            {
+              "name": "playersAmount",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "playerColor",
+              "type": "AMAZON.Color"
+            }
+          ],
+          "samples": ["{playersAmount}", "{playerColor}"]
+        },
+        {
+          "name": "PlayerSwitch",
+          "slots": [],
+          "samples": [
+            "step end",
+            "ready",
+            "play next",
+            "next",
+            "next player",
+            "next gamer"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayerPause",
+          "slots": [],
+          "samples": ["break", "need to break"]
+        },
+        {
+          "name": "PlayerContinue",
+          "slots": [],
+          "samples": ["fire", "resume game", "ready to go"]
+        },
+        {
+          "name": "PlayerFinish",
+          "slots": [],
+          "samples": ["on end", "finish", "complete", "win win", "i finished"]
+        },
+        {
+          "name": "Result",
+          "slots": [],
+          "samples": [
+            "give me resume",
+            "repeat",
+            "repeat result",
+            "repeat result please",
+            "what the result",
+            "give me result"
+          ]
+        },
+        {
+          "name": "Relaunch",
+          "slots": [],
+          "samples": [
+            "yep",
+            "fire",
+            "go",
+            "reboot game",
+            "restart game",
+            "next game",
+            "new game"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  }
+}
